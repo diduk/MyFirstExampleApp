@@ -5,12 +5,6 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-$test = file_get_contents(__DIR__.'/../git-ftp-help.txt');
-var_dump($test);
-exit();
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance

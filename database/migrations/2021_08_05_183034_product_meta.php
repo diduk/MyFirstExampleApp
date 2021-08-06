@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Test extends Migration
+class ProductMeta extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class Test extends Migration
      */
     public function up()
     {
-        Schema::create('test', function (Blueprint $table) {
+        Schema::create('product_meta', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('details');
-            $table->integer('count');
+            $table->string('product_id');
+            $table->string('colname');
+            $table->string('data_string');
+            $table->integer('data_num');
         });
     }
 
@@ -28,6 +29,6 @@ class Test extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test');
+        Schema::dropIfExists('product_meta');
     }
 }
