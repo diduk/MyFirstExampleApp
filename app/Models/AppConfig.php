@@ -38,10 +38,10 @@ class AppConfig extends Model
 
     public function getProductItemStructure(){
         return [
-            'product_id',
-            'name',
-            'details',
-            'price',
+            'product_id'=>[],
+            'name'=>['text'],
+            'details'=>['text'],
+            'price' => []
         ];
 
     }
