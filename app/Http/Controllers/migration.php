@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class migration extends Controller
 {
     public function index(){
+        return phpinfo();
+
         exec('cd C:\\Users\\diduk\\munka\\example-app\\');
         $workdir = getcwd();
         $result = exec('php ../artisan migrate:fresh');
