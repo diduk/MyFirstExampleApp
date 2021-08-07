@@ -9,6 +9,8 @@ class OrderItem extends Model
 {
     use HasFactory;
 
+
+
     protected $properties = [
         'id',
         'customer_name',
@@ -18,4 +20,8 @@ class OrderItem extends Model
         'ordered_items',
         'payment_method'
     ];
+
+    function __construct(){
+        $this->properties=[];
+    }
 }
