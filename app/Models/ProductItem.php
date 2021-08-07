@@ -14,6 +14,6 @@ class ProductItem extends Model
         'name',
         'details',
         'price',
-        'payment_method'
+
     ];
 }

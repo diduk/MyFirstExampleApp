@@ -15,6 +15,7 @@ class OrderItem extends Model
         'customer_address',
         'registration_time',
         'delivery_time',
-        'ordered_items'
+        'ordered_items',
+        'payment_method'
     ];
 }
